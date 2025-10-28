@@ -8,9 +8,6 @@ st.set_page_config(page_title="Groq Chatbot", page_icon="🤖", layout="centered
 # --- Load API key ---
 GROQ_API_KEY = os.getenv("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")
 
-if not GROQ_API_KEY:
-    st.warning("⚠️ Please set your GROQ_API_KEY as an environment variable before running the app.")
-    st.stop()
 
 # --- Groq API Endpoint ---
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
